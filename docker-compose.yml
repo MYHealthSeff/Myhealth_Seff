@@ -1,0 +1,41 @@
+
+version: '3.8'  # Updated from '3' to '3.8'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: database_sql
+      POSTGRES_DB: database_development
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile-node
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+  python-app:
+    build:
+      context: .
+      dockerfile: Dockerfile-python
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
+

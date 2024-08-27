@@ -1,0 +1,14 @@
+import Foundation
+
+func loadPatientData() -> [Patient]? {
+    guard let url = Bundle.main.url(forResource: "patient_data", withExtension: "json") else { return nil }
+    do {
+        let data = try Data(contentsOf: url)
+        let patients = try JSONDecoder().decode([Patient].self, from: data)
+        return patients
+    } catch {
+        print("Error loading patient data: \(error)")
+        return nil
+    }
+}
+

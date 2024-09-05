@@ -1,12 +1,17 @@
 import SwiftUI
 import MapKit
+import SwiftCSV
 
 struct MySection_View: View {
     @State private var selectedSection: Int = 0 // State variable to track the selected section
     @State private var searchText: String = "" // State variable for search text
     @State private var showActionsOverlay: Bool = false // State variable for overlay visibility
     @State private var dragOffset = CGSize.zero // State variable to track drag offset
-
+    
+    // CSV Data and Filtered Patient Records
+    @State private var patients: [PatientRecord] = []
+    @State private var filteredPatients: [PatientRecord] = []
+    
     var body: some View {
         ZStack {
             VStack {
@@ -21,28 +26,47 @@ struct MySection_View: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
-
-                // Search Bar
+                
+                // Enhanced Search Bar with Modern Look
                 HStack(spacing: 12) {
                     ZStack {
-                        RoundedRectangle(cornerRadius: 8)
+                        RoundedRectangle(cornerRadius: 10)
                             .fill(Color(red: 0.95, green: 0.96, blue: 0.96))
-                            .frame(width: 318, height: 22)
-                        TextField("Search...", text: $searchText)
+                            .frame(height: 40) // Updated height for modern look
+                        
+                        HStack {
+                            Image(systemName: "magnifyingglass")
+                                .foregroundColor(.gray)
+                            TextField("Search by patient name...", text: $searchText, onCommit: {
+                                filterPatients() // Filter patients when search is submitted
+                            })
                             .textFieldStyle(PlainTextFieldStyle())
+                            .frame(height: 40)
                             .padding(.horizontal, 8)
-                            .frame(width: 300, height: 20)
+                            
+                            if !searchText.isEmpty {
+                                Button(action: {
+                                    searchText = ""
+                                    filterPatients() // Reset search
+                                }) {
+                                    Image(systemName: "xmark.circle.fill")
+                                        .foregroundColor(.gray)
+                                }
+                                .padding(.trailing, 8)
+                            }
+                        }
+                        .padding(.horizontal)
                     }
+                    .padding(.horizontal)
                 }
-                .padding(.horizontal)
-
+                
                 // Section Details
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
                         Text("SECTION \(sectionName(selectedSection))")
                             .font(.title2)
                             .padding(.top)
-
+                        
                         HStack {
                             VStack(alignment: .leading) {
                                 Text("Total Beds: \(totalRooms(for: selectedSection))")
@@ -57,15 +81,15 @@ struct MySection_View: View {
                                 .frame(width: 100, height: 100)
                         }
                         .padding(.horizontal)
-
+                        
                         // Bed Details in Grid Layout
                         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 16), count: 3), spacing: 16) {
-                            ForEach(bedStatus(for: selectedSection).keys.sorted(), id: \.self) { key in
-                                RoomTileView(room: key, details: bedStatus(for: selectedSection)[key]!)
+                            ForEach(filteredPatients, id: \.room) { patient in
+                                RoomTileView(patient: patient)
                             }
                         }
                         .padding(.horizontal)
-
+                        
                         // Google Maps View for Sections A and B
                         if selectedSection == 0 || selectedSection == 1 {
                             Text("Incoming EMS Patients")
@@ -81,8 +105,8 @@ struct MySection_View: View {
                 }
                 .padding(.horizontal)
             }
-
-            // Draggable Sticky
+            
+            // Draggable Sticky Button for Actions Overlay
             Button(action: {
                 showActionsOverlay.toggle()
             }) {
@@ -118,180 +142,141 @@ struct MySection_View: View {
                 ActionsOverlayView()
             }
         }
+        .onAppear {
+            loadPatientData() // Load CSV data on view appear
+        }
         .navigationTitle("MySection & Rooms")
     }
+    private func loadPatientData() {
+        do {
+            // Ensure the file is included in the project bundle
+            guard let csvFilePath = Bundle.main.path(forResource: "database", ofType: "csv") else {
+                print("CSV file not found")
+                return
+            }
+            
+            let csvURL = URL(fileURLWithPath: csvFilePath)
+            let csv = try CSV(url: csvURL, delimiter: ",") // Specify the delimiter explicitly if needed
+            
+            // Parse the CSV rows
+            patients = csv.namedRows.compactMap { row in
+                guard let room = row["Room"],
+                      let firstName = row["First Name"],
+                      let lastName = row["Last Name"],
+                      let condition = row["Condition"] else {
+                    return nil
+                }
+                return PatientRecord(room: room, firstName: firstName, lastName: lastName, condition: condition)
+            }
+            filteredPatients = patients // Show all patients by default
+        } catch {
+            print("Failed to load CSV data: \(error)")
+        }
+    }
 
+    // Filter patients based on search query
+    private func filterPatients() {
+        if searchText.isEmpty {
+            filteredPatients = patients // Show all if no search text
+        } else {
+            filteredPatients = patients.filter {
+                $0.firstName.lowercased().contains(searchText.lowercased()) ||
+                $0.lastName.lowercased().contains(searchText.lowercased())
+            }
+        }
+    }
+    
     // Helper functions to provide data for each section
     private func sectionName(_ index: Int) -> String {
         let sections = ["Critical Care", "Acute Care", "Intermediate Care", "Observation", "Emergency Room", "Fast Track"]
         return sections[index]
     }
-
+    
     private func totalRooms(for section: Int) -> Int {
         let rooms = [18, 16, 14, 12, 14, 10]
         return rooms[section]
     }
-
+    
     private func availableBeds(for section: Int) -> Int {
         return Int.random(in: 2...totalRooms(for: section))
     }
-
+    
     private func occupiedBeds(for section: Int) -> Int {
         return totalRooms(for: section) - availableBeds(for: section)
     }
-
+    
     private func occupancyRate(for section: Int) -> Double {
         let totalBeds = Double(totalRooms(for: section))
         let occupied = Double(occupiedBeds(for: section))
         return occupied / totalBeds
     }
+}
 
-    private func bedStatus(for section: Int) -> [String: (String, String, String)] {
-        let icons = ["bed", "chair", "timer", "lab", "radiology", "message"]
-        let patients = [("John", "Doe"), ("Jane", "Smith"), ("Tom", "Johnson"), ("Sara", "Williams"), ("Mike", "Brown"), ("Anna", "Davis")]
-        let reasons = ["Chest Pain", "Fracture", "Abdominal Pain", "Head Injury", "Fever", "Asthma Attack"]
-
-        return Dictionary(uniqueKeysWithValues: (1...totalRooms(for: section)).map {
-            ("Room \($0)", (icons.randomElement()!, patients[$0 % patients.count].0, patients[$0 % patients.count].1))
-        })
+struct RoomTileView: View {
+    var patient: PatientRecord
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(patient.room)
+                .font(.headline)
+            Text("\(patient.firstName) \(patient.lastName)")
+                .font(.subheadline)
+            Text(patient.condition)
+                .font(.caption)
+                .foregroundColor(.gray)
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
 
-// Circular Progress View
+struct PatientRecord {
+    var room: String
+    var firstName: String
+    var lastName: String
+    var condition: String
+}
+
+struct ActionsOverlayView: View {
+    var body: some View {
+        Text("Actions Overlay View")
+            .font(.title)
+            .padding()
+    }
+}
+
+struct MapView: UIViewRepresentable {
+    func makeUIView(context: Context) -> MKMapView {
+        MKMapView()
+    }
+    
+    func updateUIView(_ uiView: MKMapView, context: Context) {
+        // Configure the map view if needed
+    }
+}
+
 struct CircularProgressView: View {
     var progress: Double
-
+    
     var body: some View {
         ZStack {
             Circle()
                 .stroke(lineWidth: 10)
                 .opacity(0.3)
-                .foregroundColor(.blue)
-
+                .foregroundColor(Color.blue)
+            
             Circle()
-                .trim(from: 0.0, to: CGFloat(min(progress, 1.0)))
-                .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
-                .foregroundColor(.blue)
-                .rotationEffect(Angle(degrees: 270.0))
-                .animation(.linear, value: progress)
-
-            Text(String(format: "%.0f%%", min(progress, 1.0) * 100.0))
-                .font(.headline)
+                .trim(from: 0, to: CGFloat(min(progress, 1.0)))
+                .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round))
+                .foregroundColor(Color.blue)
+                .rotationEffect(Angle(degrees: -90))
+                .animation(.easeInOut, value: progress)
+            
+            Text(String(format: "%.0f%%", min(progress, 1.0) * 100))
+                .font(.caption)
                 .bold()
         }
-    }
-}
-
-// Room Tile View
-struct RoomTileView: View {
-    var room: String
-    var details: (String, String, String)
-
-    var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text(roomNumber(from: room))
-                    .font(.headline)
-                    .foregroundColor(.black)
-                Spacer()
-                Image(systemName: details.0) // Vector icon
-                    .font(.headline)
-                    .foregroundColor(.blue)
-            }
-            Spacer()
-            HStack {
-                Text("\(details.1) \(details.2)")
-                    .font(.caption)
-                    .foregroundColor(.black)
-                Spacer()
-            }
-            Spacer()
-            Text(reasonForVisit(for: details.1))
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.white)
-                .shadow(radius: 2)
-        )
-        .frame(width: 100, height: 140) // Adjusted size
-        .onTapGesture {
-            // Navigate to Patient Chart view
-            print("Navigating to \(details.1) \(details.2)'s Patient Chart")
-        }
-    }
-
-    private func roomNumber(from room: String) -> String {
-        return room.components(separatedBy: " ").last ?? ""
-    }
-
-    private func reasonForVisit(for firstName: String) -> String {
-        // Placeholder for actual logic to match reason for visit based on the patient's first name
-        let reasons = ["Chest Pain", "Fracture", "Abdominal Pain", "Head Injury", "Fever", "Asthma Attack"]
-        return reasons.randomElement() ?? ""
-    }
-}
-
-// Map View for EMS
-struct MapView: UIViewRepresentable {
-    func makeUIView(context: Context) -> MKMapView {
-        MKMapView()
-    }
-
-    func updateUIView(_ view: MKMapView, context: Context) {
-        let annotation = MKPointAnnotation()
-        annotation.title = "Incoming Patient"
-        annotation.subtitle = "Chest Pain, 45 Y, Male"
-        annotation.coordinate = CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194)
-        view.addAnnotation(annotation)
-        view.setRegion(MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500), animated: true)
-    }
-}
-
-// Actions Overlay View
-struct ActionsOverlayView: View {
-    var body: some View {
-        VStack {
-            Text("Quick Actions")
-                .font(.title)
-                .padding()
-
-            Spacer()
-
-            // Add your action buttons here
-            Button(action: {
-                print("Action 1 triggered")
-            }) {
-                Text("Action 1")
-                    .font(.headline)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            .padding(.horizontal)
-
-            Button(action: {
-                print("Action 2 triggered")
-            }) {
-                Text("Action 2")
-                    .font(.headline)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            .padding(.horizontal)
-
-            Spacer()
-        }
-        .background(Color.white)
-        .cornerRadius(20)
-        .shadow(radius: 10)
-        .padding()
     }
 }

@@ -1,0 +1,85 @@
+Section,Room_Number,Capacity,Equipment,Resource_Availability,Specialty
+A,1,2,"IV Pump, Syringe Pump",High,Pediatrics
+A,2,1,"Ventilator, Oxygen Tank, Defibrillator, IV Pump",Low,General
+A,3,3,"Oxygen Tank, Electrocardiogram (ECG), Defibrillator",High,General
+A,4,3,"Electrocardiogram (ECG), IV Pump",Low,Neurology
+A,5,4,Syringe Pump,Low,Trauma
+A,6,3,"IV Pump, Oxygen Tank",Low,Trauma
+A,7,2,"Blood Pressure Monitor, Oxygen Tank, IV Pump",High,Pediatrics
+A,8,1,"Infusion Pump, Defibrillator, Electrocardiogram (ECG), Pulse Oximeter",Low,Cardiology
+A,9,2,"Blood Pressure Monitor, IV Pump",Low,Neurology
+A,10,1,"IV Pump, Infusion Pump, Blood Pressure Monitor, Heart Monitor",High,Trauma
+A,11,4,Pulse Oximeter,Low,Neurology
+A,12,4,"IV Pump, Ventilator, Oxygen Tank",High,Cardiology
+A,13,2,"Heart Monitor, Infusion Pump, Defibrillator, Oxygen Tank",Medium,General
+A,14,4,"Pulse Oximeter, Ventilator, Syringe Pump",Medium,Cardiology
+A,15,1,"Blood Pressure Monitor, Oxygen Tank",Medium,Neurology
+A,16,3,Infusion Pump,High,Trauma
+A,17,2,"Oxygen Tank, Ventilator, Blood Pressure Monitor, Heart Monitor",Low,Cardiology
+A,18,1,Infusion Pump,Medium,Pediatrics
+B,1,2,"Blood Pressure Monitor, Pulse Oximeter, Defibrillator",Medium,Cardiology
+B,2,4,Oxygen Tank,High,Cardiology
+B,3,4,"Infusion Pump, Ventilator, IV Pump, Electrocardiogram (ECG)",Low,General
+B,4,3,"Syringe Pump, Infusion Pump",Low,Neurology
+B,5,1,Pulse Oximeter,Low,Neurology
+B,6,3,Syringe Pump,High,General
+B,7,1,"Syringe Pump, Defibrillator, Electrocardiogram (ECG), Oxygen Tank",High,Pediatrics
+B,8,3,"Ventilator, IV Pump",Medium,Neurology
+B,9,4,"IV Pump, Blood Pressure Monitor",High,Cardiology
+B,10,3,Electrocardiogram (ECG),High,Cardiology
+B,11,1,"Pulse Oximeter, IV Pump, Heart Monitor, Oxygen Tank",High,Neurology
+B,12,2,Blood Pressure Monitor,Medium,Neurology
+B,13,1,"Pulse Oximeter, Syringe Pump, Defibrillator",High,Trauma
+B,14,4,"Blood Pressure Monitor, Ventilator",Medium,Pediatrics
+B,15,2,"Ventilator, Syringe Pump, IV Pump",Medium,Cardiology
+B,16,1,"Electrocardiogram (ECG), Infusion Pump, Blood Pressure Monitor",Medium,General
+C,1,2,"Blood Pressure Monitor, Infusion Pump, Heart Monitor",High,Cardiology
+C,2,4,"Pulse Oximeter, Blood Pressure Monitor, Electrocardiogram (ECG)",Medium,Pediatrics
+C,3,3,"Oxygen Tank, Defibrillator, Pulse Oximeter",Low,Pediatrics
+C,4,2,"IV Pump, Infusion Pump",Low,Pediatrics
+C,5,4,Defibrillator,Low,General
+C,6,3,"Electrocardiogram (ECG), Defibrillator",High,Pediatrics
+C,7,3,"Defibrillator, Blood Pressure Monitor, Heart Monitor",High,Pediatrics
+C,8,4,"Oxygen Tank, Infusion Pump, IV Pump",High,Cardiology
+C,9,4,Heart Monitor,Medium,Neurology
+C,10,1,Blood Pressure Monitor,High,Trauma
+C,11,4,"Oxygen Tank, IV Pump",Low,General
+C,12,4,"Blood Pressure Monitor, IV Pump, Pulse Oximeter",Medium,Neurology
+C,13,4,"Infusion Pump, Oxygen Tank, Heart Monitor, Defibrillator",High,Pediatrics
+C,14,3,"Electrocardiogram (ECG), Ventilator, Defibrillator",Medium,General
+D,1,4,"Infusion Pump, Syringe Pump",High,Cardiology
+D,2,4,Oxygen Tank,High,Trauma
+D,3,4,IV Pump,Low,Trauma
+D,4,2,"IV Pump, Infusion Pump, Oxygen Tank",Medium,Neurology
+D,5,4,"Infusion Pump, Blood Pressure Monitor, Heart Monitor",Low,Pediatrics
+D,6,1,"Ventilator, Infusion Pump, Pulse Oximeter, Electrocardiogram (ECG)",High,Neurology
+D,7,1,"Pulse Oximeter, Oxygen Tank",High,General
+D,8,4,Pulse Oximeter,High,Cardiology
+D,9,1,"Heart Monitor, IV Pump, Electrocardiogram (ECG), Infusion Pump",High,General
+D,10,1,Defibrillator,High,Cardiology
+D,11,3,"IV Pump, Blood Pressure Monitor, Ventilator, Heart Monitor",Low,Neurology
+D,12,3,Heart Monitor,Low,Neurology
+E,1,4,"Pulse Oximeter, Infusion Pump, IV Pump, Oxygen Tank",High,General
+E,2,3,"IV Pump, Oxygen Tank",Medium,Pediatrics
+E,3,4,"Pulse Oximeter, Oxygen Tank",Medium,Neurology
+E,4,3,"Defibrillator, Electrocardiogram (ECG), IV Pump, Infusion Pump",High,Trauma
+E,5,3,"Infusion Pump, Pulse Oximeter, Defibrillator, Syringe Pump",Low,Trauma
+E,6,1,Oxygen Tank,High,Neurology
+E,7,1,"Pulse Oximeter, Oxygen Tank",Medium,Pediatrics
+E,8,2,"Heart Monitor, Infusion Pump",Low,Pediatrics
+E,9,3,"Pulse Oximeter, IV Pump, Electrocardiogram (ECG)",Low,Neurology
+E,10,1,"Ventilator, Defibrillator, Syringe Pump",Medium,Cardiology
+E,11,3,"Blood Pressure Monitor, Oxygen Tank",Medium,Cardiology
+E,12,3,"Heart Monitor, Ventilator",High,General
+E,13,2,"IV Pump, Ventilator, Infusion Pump, Defibrillator",Low,Trauma
+E,14,3,Oxygen Tank,Low,Pediatrics
+F,1,2,Infusion Pump,Low,Neurology
+F,2,3,IV Pump,Medium,Cardiology
+F,3,4,"IV Pump, Blood Pressure Monitor, Oxygen Tank",Low,Pediatrics
+F,4,4,"Defibrillator, Heart Monitor, Syringe Pump, Electrocardiogram (ECG)",Medium,Neurology
+F,5,4,"IV Pump, Syringe Pump, Oxygen Tank",Medium,Neurology
+F,6,1,IV Pump,High,Neurology
+F,7,2,"Pulse Oximeter, Infusion Pump",Medium,General
+F,8,1,"Electrocardiogram (ECG), Pulse Oximeter, IV Pump",High,Cardiology
+F,9,4,"Ventilator, Blood Pressure Monitor, Syringe Pump",Low,General
+F,10,2,"Pulse Oximeter, Electrocardiogram (ECG), Oxygen Tank, Infusion Pump",Low,Pediatrics

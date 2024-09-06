@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72754CAC2C8B73DE00199AD5 /* MyHealth_AIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754CAB2C8B73DE00199AD5 /* MyHealth_AIApp.swift */; };
+		72754CAE2C8B73DE00199AD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754CAD2C8B73DE00199AD5 /* ContentView.swift */; };
+		72754CB02C8B73DF00199AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72754CAF2C8B73DF00199AD5 /* Assets.xcassets */; };
+		72754CB32C8B73DF00199AD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72754CB22C8B73DF00199AD5 /* Preview Assets.xcassets */; };
+		72754CBD2C8B73E000199AD5 /* MyHealth_AITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754CBC2C8B73E000199AD5 /* MyHealth_AITests.swift */; };
+		72754CC72C8B73E000199AD5 /* MyHealth_AIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754CC62C8B73E000199AD5 /* MyHealth_AIUITests.swift */; };
+		72754CC92C8B73E000199AD5 /* MyHealth_AIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754CC82C8B73E000199AD5 /* MyHealth_AIUITestsLaunchTests.swift */; };
+		72754CDA2C8B74BE00199AD5 /* MyHealth.AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754CD92C8B74BE00199AD5 /* MyHealth.AI.swift */; };
+		72754CDF2C8B759900199AD5 /* MyHealthAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754CDE2C8B759900199AD5 /* MyHealthAITests.swift */; };
+		72754CE02C8B759900199AD5 /* MyHealthAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754CDE2C8B759900199AD5 /* MyHealthAITests.swift */; };
+		72754D562C8B776400199AD5 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D012C8B775C00199AD5 /* Concurrency.swift */; };
+		72754D572C8B776400199AD5 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D012C8B775C00199AD5 /* Concurrency.swift */; };
+		72754D582C8B776400199AD5 /* SwiftLint.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 72754D022C8B775C00199AD5 /* SwiftLint.debug.xcconfig */; };
+		72754D592C8B776400199AD5 /* SwiftLint.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 72754D022C8B775C00199AD5 /* SwiftLint.debug.xcconfig */; };
+		72754D5A2C8B776400199AD5 /* Alamofire in Resources */ = {isa = PBXBuildFile; fileRef = 72754D032C8B775C00199AD5 /* Alamofire */; };
+		72754D5B2C8B776400199AD5 /* Alamofire in Resources */ = {isa = PBXBuildFile; fileRef = 72754D032C8B775C00199AD5 /* Alamofire */; };
+		72754D5C2C8B776400199AD5 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D042C8B775C00199AD5 /* NetworkReachabilityManager.swift */; };
+		72754D5D2C8B776400199AD5 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D042C8B775C00199AD5 /* NetworkReachabilityManager.swift */; };
+		72754D5E2C8B776400199AD5 /* libAlamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72754D052C8B775C00199AD5 /* libAlamofire.a */; };
+		72754D5F2C8B776400199AD5 /* libAlamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72754D052C8B775C00199AD5 /* libAlamofire.a */; };
+		72754D602C8B776400199AD5 /* Alamofire in Resources */ = {isa = PBXBuildFile; fileRef = 72754D062C8B775C00199AD5 /* Alamofire */; };
+		72754D612C8B776400199AD5 /* Alamofire in Resources */ = {isa = PBXBuildFile; fileRef = 72754D062C8B775C00199AD5 /* Alamofire */; };
+		72754D622C8B776400199AD5 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D072C8B775C00199AD5 /* ResponseSerialization.swift */; };
+		72754D632C8B776400199AD5 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D072C8B775C00199AD5 /* ResponseSerialization.swift */; };
+		72754D642C8B776400199AD5 /* WebSocketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D082C8B775C00199AD5 /* WebSocketRequest.swift */; };
+		72754D652C8B776400199AD5 /* WebSocketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D082C8B775C00199AD5 /* WebSocketRequest.swift */; };
+		72754D662C8B776400199AD5 /* database.csv in Resources */ = {isa = PBXBuildFile; fileRef = 72754D092C8B776100199AD5 /* database.csv */; };
+		72754D672C8B776400199AD5 /* database.csv in Resources */ = {isa = PBXBuildFile; fileRef = 72754D092C8B776100199AD5 /* database.csv */; };
+		72754D682C8B776400199AD5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 72754D0A2C8B776100199AD5 /* Podfile */; };
+		72754D692C8B776400199AD5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 72754D0A2C8B776100199AD5 /* Podfile */; };
+		72754D6A2C8B776400199AD5 /* RequestCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D0B2C8B776100199AD5 /* RequestCompression.swift */; };
+		72754D6B2C8B776400199AD5 /* RequestCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D0B2C8B776100199AD5 /* RequestCompression.swift */; };
+		72754D6C2C8B776400199AD5 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D0C2C8B776100199AD5 /* SessionDelegate.swift */; };
+		72754D6D2C8B776400199AD5 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D0C2C8B776100199AD5 /* SessionDelegate.swift */; };
+		72754D6E2C8B776400199AD5 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D0D2C8B776100199AD5 /* Validation.swift */; };
+		72754D6F2C8B776400199AD5 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D0D2C8B776100199AD5 /* Validation.swift */; };
+		72754D702C8B776400199AD5 /* MBProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = 72754D0E2C8B776100199AD5 /* MBProgressHUD */; };
+		72754D712C8B776400199AD5 /* MBProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = 72754D0E2C8B776100199AD5 /* MBProgressHUD */; };
+		72754D722C8B776400199AD5 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D0F2C8B776100199AD5 /* URLConvertible+URLRequestConvertible.swift */; };
+		72754D732C8B776400199AD5 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D0F2C8B776100199AD5 /* URLConvertible+URLRequestConvertible.swift */; };
+		72754D742C8B776400199AD5 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D102C8B776100199AD5 /* AFError.swift */; };
+		72754D752C8B776400199AD5 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D102C8B776100199AD5 /* AFError.swift */; };
+		72754D762C8B776400199AD5 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D112C8B776100199AD5 /* DispatchQueue+Alamofire.swift */; };
+		72754D772C8B776400199AD5 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D112C8B776100199AD5 /* DispatchQueue+Alamofire.swift */; };
+		72754D782C8B776400199AD5 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72754D122C8B776100199AD5 /* libMBProgressHUD.a */; };
+		72754D792C8B776400199AD5 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72754D122C8B776100199AD5 /* libMBProgressHUD.a */; };
+		72754D7A2C8B776400199AD5 /* Pods-MyHealth.AI-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72754D132C8B776100199AD5 /* Pods-MyHealth.AI-acknowledgements.plist */; };
+		72754D7B2C8B776400199AD5 /* Pods-MyHealth.AI-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72754D132C8B776100199AD5 /* Pods-MyHealth.AI-acknowledgements.plist */; };
+		72754D7C2C8B776400199AD5 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D142C8B776100199AD5 /* URLSessionConfiguration+Alamofire.swift */; };
+		72754D7D2C8B776400199AD5 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D142C8B776100199AD5 /* URLSessionConfiguration+Alamofire.swift */; };
+		72754D7E2C8B776400199AD5 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D152C8B776100199AD5 /* CachedResponseHandler.swift */; };
+		72754D7F2C8B776400199AD5 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D152C8B776100199AD5 /* CachedResponseHandler.swift */; };
+		72754D802C8B776400199AD5 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D162C8B776100199AD5 /* URLRequest+Alamofire.swift */; };
+		72754D812C8B776400199AD5 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D162C8B776100199AD5 /* URLRequest+Alamofire.swift */; };
+		72754D822C8B776400199AD5 /* Pods-MyHealth.AI.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 72754D172C8B776100199AD5 /* Pods-MyHealth.AI.release.xcconfig */; };
+		72754D832C8B776400199AD5 /* Pods-MyHealth.AI.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 72754D172C8B776100199AD5 /* Pods-MyHealth.AI.release.xcconfig */; };
+		72754D842C8B776400199AD5 /* Alamofire.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72754D182C8B776100199AD5 /* Alamofire.bundle */; };
+		72754D852C8B776400199AD5 /* Alamofire.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72754D182C8B776100199AD5 /* Alamofire.bundle */; };
+		72754D862C8B776400199AD5 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D192C8B776200199AD5 /* AuthenticationInterceptor.swift */; };
+		72754D872C8B776400199AD5 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D192C8B776200199AD5 /* AuthenticationInterceptor.swift */; };
+		72754D882C8B776400199AD5 /* MBProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = 72754D1A2C8B776200199AD5 /* MBProgressHUD */; };
+		72754D892C8B776400199AD5 /* MBProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = 72754D1A2C8B776200199AD5 /* MBProgressHUD */; };
+		72754D8A2C8B776400199AD5 /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D1B2C8B776200199AD5 /* UploadRequest.swift */; };
+		72754D8B2C8B776400199AD5 /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D1B2C8B776200199AD5 /* UploadRequest.swift */; };
+		72754D8C2C8B776400199AD5 /* MyHealth.AI in Resources */ = {isa = PBXBuildFile; fileRef = 72754D1C2C8B776200199AD5 /* MyHealth.AI */; };
+		72754D8D2C8B776400199AD5 /* MyHealth.AI in Resources */ = {isa = PBXBuildFile; fileRef = 72754D1C2C8B776200199AD5 /* MyHealth.AI */; };
+		72754D8E2C8B776400199AD5 /* Pods-MyHealth.AI in Resources */ = {isa = PBXBuildFile; fileRef = 72754D1D2C8B776200199AD5 /* Pods-MyHealth.AI */; };
+		72754D8F2C8B776400199AD5 /* Pods-MyHealth.AI in Resources */ = {isa = PBXBuildFile; fileRef = 72754D1D2C8B776200199AD5 /* Pods-MyHealth.AI */; };
+		72754D902C8B776400199AD5 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D1E2C8B776200199AD5 /* Notifications.swift */; };
+		72754D912C8B776400199AD5 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D1E2C8B776200199AD5 /* Notifications.swift */; };
+		72754D922C8B776400199AD5 /* libPods-MyHealth.AI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72754D1F2C8B776200199AD5 /* libPods-MyHealth.AI.a */; };
+		72754D932C8B776400199AD5 /* libPods-MyHealth.AI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72754D1F2C8B776200199AD5 /* libPods-MyHealth.AI.a */; };
+		72754D942C8B776400199AD5 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D202C8B776200199AD5 /* ServerTrustEvaluation.swift */; };
+		72754D952C8B776400199AD5 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D202C8B776200199AD5 /* ServerTrustEvaluation.swift */; };
+		72754D962C8B776400199AD5 /* Pods-MyHealth.AI-resources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 72754D222C8B776200199AD5 /* Pods-MyHealth.AI-resources.sh */; };
+		72754D972C8B776400199AD5 /* Pods-MyHealth.AI-resources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 72754D222C8B776200199AD5 /* Pods-MyHealth.AI-resources.sh */; };
+		72754D982C8B776400199AD5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D232C8B776200199AD5 /* Result+Alamofire.swift */; };
+		72754D992C8B776400199AD5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D232C8B776200199AD5 /* Result+Alamofire.swift */; };
+		72754D9A2C8B776400199AD5 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D242C8B776200199AD5 /* Combine.swift */; };
+		72754D9B2C8B776400199AD5 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D242C8B776200199AD5 /* Combine.swift */; };
+		72754D9C2C8B776400199AD5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 72754D252C8B776200199AD5 /* MBProgressHUD.m */; };
+		72754D9D2C8B776400199AD5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 72754D252C8B776200199AD5 /* MBProgressHUD.m */; };
+		72754D9E2C8B776400199AD5 /* Pods-MyHealth.AI-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 72754D262C8B776200199AD5 /* Pods-MyHealth.AI-acknowledgements.markdown */; };
+		72754D9F2C8B776400199AD5 /* Pods-MyHealth.AI-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 72754D262C8B776200199AD5 /* Pods-MyHealth.AI-acknowledgements.markdown */; };
+		72754DA02C8B776400199AD5 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D342C8B776200199AD5 /* Session.swift */; };
+		72754DA12C8B776400199AD5 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D342C8B776200199AD5 /* Session.swift */; };
+		72754DA22C8B776400199AD5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D352C8B776200199AD5 /* Request.swift */; };
+		72754DA32C8B776400199AD5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D352C8B776200199AD5 /* Request.swift */; };
+		72754DA42C8B776400199AD5 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D362C8B776200199AD5 /* StringEncoding+Alamofire.swift */; };
+		72754DA52C8B776400199AD5 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D362C8B776200199AD5 /* StringEncoding+Alamofire.swift */; };
+		72754DA62C8B776400199AD5 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D372C8B776300199AD5 /* EventMonitor.swift */; };
+		72754DA72C8B776400199AD5 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D372C8B776300199AD5 /* EventMonitor.swift */; };
+		72754DA82C8B776400199AD5 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D382C8B776300199AD5 /* RedirectHandler.swift */; };
+		72754DA92C8B776400199AD5 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D382C8B776300199AD5 /* RedirectHandler.swift */; };
+		72754DAA2C8B776400199AD5 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 72754D392C8B776300199AD5 /* Pods */; };
+		72754DAB2C8B776400199AD5 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 72754D392C8B776300199AD5 /* Pods */; };
+		72754DAC2C8B776400199AD5 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3A2C8B776300199AD5 /* Protected.swift */; };
+		72754DAD2C8B776400199AD5 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3A2C8B776300199AD5 /* Protected.swift */; };
+		72754DAE2C8B776400199AD5 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3B2C8B776300199AD5 /* ParameterEncoding.swift */; };
+		72754DAF2C8B776400199AD5 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3B2C8B776300199AD5 /* ParameterEncoding.swift */; };
+		72754DB02C8B776400199AD5 /* DataStreamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3C2C8B776300199AD5 /* DataStreamRequest.swift */; };
+		72754DB12C8B776400199AD5 /* DataStreamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3C2C8B776300199AD5 /* DataStreamRequest.swift */; };
+		72754DB22C8B776400199AD5 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3D2C8B776300199AD5 /* MultipartUpload.swift */; };
+		72754DB32C8B776400199AD5 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3D2C8B776300199AD5 /* MultipartUpload.swift */; };
+		72754DB42C8B776400199AD5 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3E2C8B776300199AD5 /* HTTPHeaders.swift */; };
+		72754DB52C8B776400199AD5 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3E2C8B776300199AD5 /* HTTPHeaders.swift */; };
+		72754DB62C8B776400199AD5 /* DownloadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3F2C8B776300199AD5 /* DownloadRequest.swift */; };
+		72754DB72C8B776400199AD5 /* DownloadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D3F2C8B776300199AD5 /* DownloadRequest.swift */; };
+		72754DB82C8B776400199AD5 /* SwiftLint.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 72754D402C8B776300199AD5 /* SwiftLint.release.xcconfig */; };
+		72754DB92C8B776400199AD5 /* SwiftLint.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 72754D402C8B776300199AD5 /* SwiftLint.release.xcconfig */; };
+		72754DBA2C8B776400199AD5 /* Pods-MyHealth.AI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72754D412C8B776300199AD5 /* Pods-MyHealth.AI-dummy.m */; };
+		72754DBB2C8B776400199AD5 /* Pods-MyHealth.AI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72754D412C8B776300199AD5 /* Pods-MyHealth.AI-dummy.m */; };
+		72754DBC2C8B776400199AD5 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D422C8B776300199AD5 /* RequestInterceptor.swift */; };
+		72754DBD2C8B776400199AD5 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D422C8B776300199AD5 /* RequestInterceptor.swift */; };
+		72754DBE2C8B776400199AD5 /* Pods-MyHealth.AI.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 72754D462C8B776300199AD5 /* Pods-MyHealth.AI.debug.xcconfig */; };
+		72754DBF2C8B776400199AD5 /* Pods-MyHealth.AI.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 72754D462C8B776300199AD5 /* Pods-MyHealth.AI.debug.xcconfig */; };
+		72754DC02C8B776400199AD5 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D472C8B776300199AD5 /* ParameterEncoder.swift */; };
+		72754DC12C8B776400199AD5 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D472C8B776300199AD5 /* ParameterEncoder.swift */; };
+		72754DC22C8B776400199AD5 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D482C8B776300199AD5 /* OperationQueue+Alamofire.swift */; };
+		72754DC32C8B776400199AD5 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D482C8B776300199AD5 /* OperationQueue+Alamofire.swift */; };
+		72754DC42C8B776400199AD5 /* database.csv in Resources */ = {isa = PBXBuildFile; fileRef = 72754D492C8B776300199AD5 /* database.csv */; };
+		72754DC52C8B776400199AD5 /* database.csv in Resources */ = {isa = PBXBuildFile; fileRef = 72754D492C8B776300199AD5 /* database.csv */; };
+		72754DC62C8B776400199AD5 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D4B2C8B776300199AD5 /* Response.swift */; };
+		72754DC72C8B776400199AD5 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D4B2C8B776300199AD5 /* Response.swift */; };
+		72754DC82C8B776400199AD5 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D4C2C8B776300199AD5 /* MultipartFormData.swift */; };
+		72754DC92C8B776400199AD5 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D4C2C8B776300199AD5 /* MultipartFormData.swift */; };
+		72754DCA2C8B776400199AD5 /* SwiftLint in Resources */ = {isa = PBXBuildFile; fileRef = 72754D4D2C8B776300199AD5 /* SwiftLint */; };
+		72754DCB2C8B776400199AD5 /* SwiftLint in Resources */ = {isa = PBXBuildFile; fileRef = 72754D4D2C8B776300199AD5 /* SwiftLint */; };
+		72754DCC2C8B776400199AD5 /* SwiftLint in Resources */ = {isa = PBXBuildFile; fileRef = 72754D4E2C8B776300199AD5 /* SwiftLint */; };
+		72754DCD2C8B776400199AD5 /* SwiftLint in Resources */ = {isa = PBXBuildFile; fileRef = 72754D4E2C8B776300199AD5 /* SwiftLint */; };
+		72754DCE2C8B776400199AD5 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D4F2C8B776300199AD5 /* URLEncodedFormEncoder.swift */; };
+		72754DCF2C8B776400199AD5 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D4F2C8B776300199AD5 /* URLEncodedFormEncoder.swift */; };
+		72754DD02C8B776400199AD5 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D502C8B776300199AD5 /* RetryPolicy.swift */; };
+		72754DD12C8B776400199AD5 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D502C8B776300199AD5 /* RetryPolicy.swift */; };
+		72754DD22C8B776400199AD5 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D512C8B776300199AD5 /* AlamofireExtended.swift */; };
+		72754DD32C8B776400199AD5 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D512C8B776300199AD5 /* AlamofireExtended.swift */; };
+		72754DD42C8B776400199AD5 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D522C8B776400199AD5 /* DataRequest.swift */; };
+		72754DD52C8B776400199AD5 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D522C8B776400199AD5 /* DataRequest.swift */; };
+		72754DD62C8B776400199AD5 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D532C8B776400199AD5 /* RequestTaskMap.swift */; };
+		72754DD72C8B776400199AD5 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D532C8B776400199AD5 /* RequestTaskMap.swift */; };
+		72754DD82C8B776400199AD5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D542C8B776400199AD5 /* Alamofire.swift */; };
+		72754DD92C8B776400199AD5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D542C8B776400199AD5 /* Alamofire.swift */; };
+		72754DDA2C8B776400199AD5 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D552C8B776400199AD5 /* HTTPMethod.swift */; };
+		72754DDB2C8B776400199AD5 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72754D552C8B776400199AD5 /* HTTPMethod.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72754CB92C8B73E000199AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72754CA02C8B73DE00199AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72754CA72C8B73DE00199AD5;
+			remoteInfo = MyHealth.AI;
+		};
+		72754CC32C8B73E000199AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72754CA02C8B73DE00199AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72754CA72C8B73DE00199AD5;
+			remoteInfo = MyHealth.AI;
+		};
+		72754D2D2C8B776200199AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72754D272C8B776200199AD5 /* MyHealth.AI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7207B2AF2C8403B300852719;
+			remoteInfo = MyHealth.AI;
+		};
+		72754D2F2C8B776200199AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72754D272C8B776200199AD5 /* MyHealth.AI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7207B2BF2C8403B500852719;
+			remoteInfo = MyHealth.AITests;
+		};
+		72754D312C8B776200199AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72754D272C8B776200199AD5 /* MyHealth.AI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7207B2C92C8403B500852719;
+			remoteInfo = MyHealth.AIUITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72754CA82C8B73DE00199AD5 /* MyHealth.AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHealth.AI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72754CAB2C8B73DE00199AD5 /* MyHealth_AIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealth_AIApp.swift; sourceTree = "<group>"; };
+		72754CAD2C8B73DE00199AD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72754CAF2C8B73DF00199AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72754CB22C8B73DF00199AD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72754CB82C8B73E000199AD5 /* MyHealth.AITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHealth.AITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72754CBC2C8B73E000199AD5 /* MyHealth_AITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealth_AITests.swift; sourceTree = "<group>"; };
+		72754CC22C8B73E000199AD5 /* MyHealth.AIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHealth.AIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72754CC62C8B73E000199AD5 /* MyHealth_AIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealth_AIUITests.swift; sourceTree = "<group>"; };
+		72754CC82C8B73E000199AD5 /* MyHealth_AIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealth_AIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72754CD92C8B74BE00199AD5 /* MyHealth.AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealth.AI.swift; sourceTree = "<group>"; };
+		72754CDE2C8B759900199AD5 /* MyHealthAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthAITests.swift; sourceTree = SOURCE_ROOT; };
+		72754CF12C8B75E100199AD5 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		72754D012C8B775C00199AD5 /* Concurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = ../Pods/Alamofire/Source/Features/Concurrency.swift; sourceTree = "<group>"; };
+		72754D022C8B775C00199AD5 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = SwiftLint.debug.xcconfig; path = "../Pods/Target Support Files/SwiftLint/SwiftLint.debug.xcconfig"; sourceTree = "<group>"; };
+		72754D032C8B775C00199AD5 /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alamofire; path = ../Pods/Alamofire; sourceTree = "<group>"; };
+		72754D042C8B775C00199AD5 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = ../Pods/Alamofire/Source/Features/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		72754D052C8B775C00199AD5 /* libAlamofire.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAlamofire.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/MyHealth.AI-dxgjbwvkvjhmtkccvktzrcfowhqf/Build/Products/Debug-iphonesimulator/Alamofire/libAlamofire.a"; sourceTree = "<group>"; };
+		72754D062C8B775C00199AD5 /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alamofire; path = "../Pods/Target Support Files/Alamofire"; sourceTree = "<group>"; };
+		72754D072C8B775C00199AD5 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = ../Pods/Alamofire/Source/Features/ResponseSerialization.swift; sourceTree = "<group>"; };
+		72754D082C8B775C00199AD5 /* WebSocketRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocketRequest.swift; path = ../Pods/Alamofire/Source/Core/WebSocketRequest.swift; sourceTree = "<group>"; };
+		72754D092C8B776100199AD5 /* database.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = database.csv; sourceTree = "<group>"; };
+		72754D0A2C8B776100199AD5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		72754D0B2C8B776100199AD5 /* RequestCompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestCompression.swift; path = ../Pods/Alamofire/Source/Features/RequestCompression.swift; sourceTree = "<group>"; };
+		72754D0C2C8B776100199AD5 /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = ../Pods/Alamofire/Source/Core/SessionDelegate.swift; sourceTree = "<group>"; };
+		72754D0D2C8B776100199AD5 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = ../Pods/Alamofire/Source/Features/Validation.swift; sourceTree = "<group>"; };
+		72754D0E2C8B776100199AD5 /* MBProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MBProgressHUD; path = ../Pods/MBProgressHUD; sourceTree = "<group>"; };
+		72754D0F2C8B776100199AD5 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "../Pods/Alamofire/Source/Core/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		72754D102C8B776100199AD5 /* AFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = ../Pods/Alamofire/Source/Core/AFError.swift; sourceTree = "<group>"; };
+		72754D112C8B776100199AD5 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "../Pods/Alamofire/Source/Extensions/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		72754D122C8B776100199AD5 /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/MyHealth.AI-dxgjbwvkvjhmtkccvktzrcfowhqf/Build/Products/Debug-iphonesimulator/MBProgressHUD/libMBProgressHUD.a"; sourceTree = "<group>"; };
+		72754D132C8B776100199AD5 /* Pods-MyHealth.AI-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-MyHealth.AI-acknowledgements.plist"; path = "../Pods/Target Support Files/Pods-MyHealth.AI/Pods-MyHealth.AI-acknowledgements.plist"; sourceTree = "<group>"; };
+		72754D142C8B776100199AD5 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "../Pods/Alamofire/Source/Extensions/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		72754D152C8B776100199AD5 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = ../Pods/Alamofire/Source/Features/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		72754D162C8B776100199AD5 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "../Pods/Alamofire/Source/Extensions/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		72754D172C8B776100199AD5 /* Pods-MyHealth.AI.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-MyHealth.AI.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MyHealth.AI/Pods-MyHealth.AI.release.xcconfig"; sourceTree = "<group>"; };
+		72754D182C8B776100199AD5 /* Alamofire.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Alamofire.bundle; path = "../../../../../../Library/Developer/Xcode/DerivedData/MyHealth.AI-dxgjbwvkvjhmtkccvktzrcfowhqf/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.bundle"; sourceTree = "<group>"; };
+		72754D192C8B776200199AD5 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = ../Pods/Alamofire/Source/Features/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		72754D1A2C8B776200199AD5 /* MBProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MBProgressHUD; path = "../Pods/Target Support Files/MBProgressHUD"; sourceTree = "<group>"; };
+		72754D1B2C8B776200199AD5 /* UploadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UploadRequest.swift; path = ../Pods/Alamofire/Source/Core/UploadRequest.swift; sourceTree = "<group>"; };
+		72754D1C2C8B776200199AD5 /* MyHealth.AI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyHealth.AI; path = ..; sourceTree = "<group>"; };
+		72754D1D2C8B776200199AD5 /* Pods-MyHealth.AI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Pods-MyHealth.AI"; path = "../Pods/Target Support Files/Pods-MyHealth.AI"; sourceTree = "<group>"; };
+		72754D1E2C8B776200199AD5 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = ../Pods/Alamofire/Source/Core/Notifications.swift; sourceTree = "<group>"; };
+		72754D1F2C8B776200199AD5 /* libPods-MyHealth.AI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MyHealth.AI.a"; path = "../../../../../../Library/Developer/Xcode/DerivedData/MyHealth.AI-dxgjbwvkvjhmtkccvktzrcfowhqf/Build/Products/Debug-iphonesimulator/libPods-MyHealth.AI.a"; sourceTree = "<group>"; };
+		72754D202C8B776200199AD5 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = ../Pods/Alamofire/Source/Features/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		72754D212C8B776200199AD5 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../Pods/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		72754D222C8B776200199AD5 /* Pods-MyHealth.AI-resources.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "Pods-MyHealth.AI-resources.sh"; path = "../Pods/Target Support Files/Pods-MyHealth.AI/Pods-MyHealth.AI-resources.sh"; sourceTree = "<group>"; };
+		72754D232C8B776200199AD5 /* Result+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "../Pods/Alamofire/Source/Extensions/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		72754D242C8B776200199AD5 /* Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = ../Pods/Alamofire/Source/Features/Combine.swift; sourceTree = "<group>"; };
+		72754D252C8B776200199AD5 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../Pods/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		72754D262C8B776200199AD5 /* Pods-MyHealth.AI-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "Pods-MyHealth.AI-acknowledgements.markdown"; path = "../Pods/Target Support Files/Pods-MyHealth.AI/Pods-MyHealth.AI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72754D272C8B776200199AD5 /* MyHealth.AI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyHealth.AI.xcodeproj; path = ../MyHealth.AI.xcodeproj; sourceTree = "<group>"; };
+		72754D332C8B776200199AD5 /* Pods-MyHealth.AI-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Pods-MyHealth.AI-umbrella.h"; path = "../Pods/Target Support Files/Pods-MyHealth.AI/Pods-MyHealth.AI-umbrella.h"; sourceTree = "<group>"; };
+		72754D342C8B776200199AD5 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Session.swift; path = ../Pods/Alamofire/Source/Core/Session.swift; sourceTree = "<group>"; };
+		72754D352C8B776200199AD5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = ../Pods/Alamofire/Source/Core/Request.swift; sourceTree = "<group>"; };
+		72754D362C8B776200199AD5 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "../Pods/Alamofire/Source/Extensions/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		72754D372C8B776300199AD5 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = ../Pods/Alamofire/Source/Features/EventMonitor.swift; sourceTree = "<group>"; };
+		72754D382C8B776300199AD5 /* RedirectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = ../Pods/Alamofire/Source/Features/RedirectHandler.swift; sourceTree = "<group>"; };
+		72754D392C8B776300199AD5 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pods; path = ../Pods; sourceTree = "<group>"; };
+		72754D3A2C8B776300199AD5 /* Protected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = ../Pods/Alamofire/Source/Core/Protected.swift; sourceTree = "<group>"; };
+		72754D3B2C8B776300199AD5 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = ../Pods/Alamofire/Source/Core/ParameterEncoding.swift; sourceTree = "<group>"; };
+		72754D3C2C8B776300199AD5 /* DataStreamRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStreamRequest.swift; path = ../Pods/Alamofire/Source/Core/DataStreamRequest.swift; sourceTree = "<group>"; };
+		72754D3D2C8B776300199AD5 /* MultipartUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = ../Pods/Alamofire/Source/Features/MultipartUpload.swift; sourceTree = "<group>"; };
+		72754D3E2C8B776300199AD5 /* HTTPHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = ../Pods/Alamofire/Source/Core/HTTPHeaders.swift; sourceTree = "<group>"; };
+		72754D3F2C8B776300199AD5 /* DownloadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadRequest.swift; path = ../Pods/Alamofire/Source/Core/DownloadRequest.swift; sourceTree = "<group>"; };
+		72754D402C8B776300199AD5 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = SwiftLint.release.xcconfig; path = "../Pods/Target Support Files/SwiftLint/SwiftLint.release.xcconfig"; sourceTree = "<group>"; };
+		72754D412C8B776300199AD5 /* Pods-MyHealth.AI-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Pods-MyHealth.AI-dummy.m"; path = "../Pods/Target Support Files/Pods-MyHealth.AI/Pods-MyHealth.AI-dummy.m"; sourceTree = "<group>"; };
+		72754D422C8B776300199AD5 /* RequestInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = ../Pods/Alamofire/Source/Features/RequestInterceptor.swift; sourceTree = "<group>"; };
+		72754D432C8B776300199AD5 /* MyHealth.AI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyHealth.AI.xcodeproj; path = "../Pods/Target Support Files/Pods-MyHealth.AI/MyHealth.AI.xcodeproj"; sourceTree = "<group>"; };
+		72754D462C8B776300199AD5 /* Pods-MyHealth.AI.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-MyHealth.AI.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MyHealth.AI/Pods-MyHealth.AI.debug.xcconfig"; sourceTree = "<group>"; };
+		72754D472C8B776300199AD5 /* ParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = ../Pods/Alamofire/Source/Core/ParameterEncoder.swift; sourceTree = "<group>"; };
+		72754D482C8B776300199AD5 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "../Pods/Alamofire/Source/Extensions/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		72754D492C8B776300199AD5 /* database.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = database.csv; path = ../database.csv; sourceTree = "<group>"; };
+		72754D4A2C8B776300199AD5 /* Pods-MyHealth.AI.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = "Pods-MyHealth.AI.modulemap"; path = "../Pods/Target Support Files/Pods-MyHealth.AI/Pods-MyHealth.AI.modulemap"; sourceTree = "<group>"; };
+		72754D4B2C8B776300199AD5 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = ../Pods/Alamofire/Source/Core/Response.swift; sourceTree = "<group>"; };
+		72754D4C2C8B776300199AD5 /* MultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = ../Pods/Alamofire/Source/Features/MultipartFormData.swift; sourceTree = "<group>"; };
+		72754D4D2C8B776300199AD5 /* SwiftLint */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftLint; path = ../Pods/SwiftLint; sourceTree = "<group>"; };
+		72754D4E2C8B776300199AD5 /* SwiftLint */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftLint; path = "../Pods/Target Support Files/SwiftLint"; sourceTree = "<group>"; };
+		72754D4F2C8B776300199AD5 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = ../Pods/Alamofire/Source/Features/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		72754D502C8B776300199AD5 /* RetryPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = ../Pods/Alamofire/Source/Features/RetryPolicy.swift; sourceTree = "<group>"; };
+		72754D512C8B776300199AD5 /* AlamofireExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = ../Pods/Alamofire/Source/Features/AlamofireExtended.swift; sourceTree = "<group>"; };
+		72754D522C8B776400199AD5 /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataRequest.swift; path = ../Pods/Alamofire/Source/Core/DataRequest.swift; sourceTree = "<group>"; };
+		72754D532C8B776400199AD5 /* RequestTaskMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = ../Pods/Alamofire/Source/Core/RequestTaskMap.swift; sourceTree = "<group>"; };
+		72754D542C8B776400199AD5 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = ../Pods/Alamofire/Source/Alamofire.swift; sourceTree = "<group>"; };
+		72754D552C8B776400199AD5 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = ../Pods/Alamofire/Source/Core/HTTPMethod.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72754CA52C8B73DE00199AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72754D5E2C8B776400199AD5 /* libAlamofire.a in Frameworks */,
+				72754D782C8B776400199AD5 /* libMBProgressHUD.a in Frameworks */,
+				72754D922C8B776400199AD5 /* libPods-MyHealth.AI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72754CB52C8B73E000199AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72754D5F2C8B776400199AD5 /* libAlamofire.a in Frameworks */,
+				72754D792C8B776400199AD5 /* libMBProgressHUD.a in Frameworks */,
+				72754D932C8B776400199AD5 /* libPods-MyHealth.AI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72754CBF2C8B73E000199AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72754C9F2C8B73DE00199AD5 = {
+			isa = PBXGroup;
+			children = (
+				72754CD52C8B740300199AD5 /* Sources */,
+				72754CDD2C8B756600199AD5 /* Tests */,
+				72754D212C8B776200199AD5 /* MBProgressHUD.h */,
+				72754D252C8B776200199AD5 /* MBProgressHUD.m */,
+				72754D4C2C8B776300199AD5 /* MultipartFormData.swift */,
+				72754D3D2C8B776300199AD5 /* MultipartUpload.swift */,
+				72754CAA2C8B73DE00199AD5 /* MyHealth.AI */,
+				72754CBB2C8B73E000199AD5 /* MyHealth.AITests */,
+				72754CC52C8B73E000199AD5 /* MyHealth.AIUITests */,
+				72754CF12C8B75E100199AD5 /* Pods.xcodeproj */,
+				72754D102C8B776100199AD5 /* AFError.swift */,
+				72754D062C8B775C00199AD5 /* Alamofire */,
+				72754D032C8B775C00199AD5 /* Alamofire */,
+				72754D182C8B776100199AD5 /* Alamofire.bundle */,
+				72754D542C8B776400199AD5 /* Alamofire.swift */,
+				72754D512C8B776300199AD5 /* AlamofireExtended.swift */,
+				72754D192C8B776200199AD5 /* AuthenticationInterceptor.swift */,
+				72754D152C8B776100199AD5 /* CachedResponseHandler.swift */,
+				72754D242C8B776200199AD5 /* Combine.swift */,
+				72754D012C8B775C00199AD5 /* Concurrency.swift */,
+				72754D492C8B776300199AD5 /* database.csv */,
+				72754D092C8B776100199AD5 /* database.csv */,
+				72754D522C8B776400199AD5 /* DataRequest.swift */,
+				72754D3C2C8B776300199AD5 /* DataStreamRequest.swift */,
+				72754D112C8B776100199AD5 /* DispatchQueue+Alamofire.swift */,
+				72754D3F2C8B776300199AD5 /* DownloadRequest.swift */,
+				72754D372C8B776300199AD5 /* EventMonitor.swift */,
+				72754D3E2C8B776300199AD5 /* HTTPHeaders.swift */,
+				72754D552C8B776400199AD5 /* HTTPMethod.swift */,
+				72754D052C8B775C00199AD5 /* libAlamofire.a */,
+				72754D122C8B776100199AD5 /* libMBProgressHUD.a */,
+				72754D1F2C8B776200199AD5 /* libPods-MyHealth.AI.a */,
+				72754D1A2C8B776200199AD5 /* MBProgressHUD */,
+				72754D0E2C8B776100199AD5 /* MBProgressHUD */,
+				72754D1C2C8B776200199AD5 /* MyHealth.AI */,
+				72754D432C8B776300199AD5 /* MyHealth.AI.xcodeproj */,
+				72754D272C8B776200199AD5 /* MyHealth.AI.xcodeproj */,
+				72754D042C8B775C00199AD5 /* NetworkReachabilityManager.swift */,
+				72754D1E2C8B776200199AD5 /* Notifications.swift */,
+				72754D482C8B776300199AD5 /* OperationQueue+Alamofire.swift */,
+				72754D472C8B776300199AD5 /* ParameterEncoder.swift */,
+				72754D3B2C8B776300199AD5 /* ParameterEncoding.swift */,
+				72754D0A2C8B776100199AD5 /* Podfile */,
+				72754D392C8B776300199AD5 /* Pods */,
+				72754D1D2C8B776200199AD5 /* Pods-MyHealth.AI */,
+				72754D262C8B776200199AD5 /* Pods-MyHealth.AI-acknowledgements.markdown */,
+				72754D132C8B776100199AD5 /* Pods-MyHealth.AI-acknowledgements.plist */,
+				72754D412C8B776300199AD5 /* Pods-MyHealth.AI-dummy.m */,
+				72754D222C8B776200199AD5 /* Pods-MyHealth.AI-resources.sh */,
+				72754D332C8B776200199AD5 /* Pods-MyHealth.AI-umbrella.h */,
+				72754D462C8B776300199AD5 /* Pods-MyHealth.AI.debug.xcconfig */,
+				72754D4A2C8B776300199AD5 /* Pods-MyHealth.AI.modulemap */,
+				72754D172C8B776100199AD5 /* Pods-MyHealth.AI.release.xcconfig */,
+				72754D3A2C8B776300199AD5 /* Protected.swift */,
+				72754D382C8B776300199AD5 /* RedirectHandler.swift */,
+				72754D352C8B776200199AD5 /* Request.swift */,
+				72754D0B2C8B776100199AD5 /* RequestCompression.swift */,
+				72754D422C8B776300199AD5 /* RequestInterceptor.swift */,
+				72754D532C8B776400199AD5 /* RequestTaskMap.swift */,
+				72754D4B2C8B776300199AD5 /* Response.swift */,
+				72754D072C8B775C00199AD5 /* ResponseSerialization.swift */,
+				72754D232C8B776200199AD5 /* Result+Alamofire.swift */,
+				72754D502C8B776300199AD5 /* RetryPolicy.swift */,
+				72754D202C8B776200199AD5 /* ServerTrustEvaluation.swift */,
+				72754D342C8B776200199AD5 /* Session.swift */,
+				72754D0C2C8B776100199AD5 /* SessionDelegate.swift */,
+				72754D362C8B776200199AD5 /* StringEncoding+Alamofire.swift */,
+				72754D4E2C8B776300199AD5 /* SwiftLint */,
+				72754D4D2C8B776300199AD5 /* SwiftLint */,
+				72754D022C8B775C00199AD5 /* SwiftLint.debug.xcconfig */,
+				72754D402C8B776300199AD5 /* SwiftLint.release.xcconfig */,
+				72754D1B2C8B776200199AD5 /* UploadRequest.swift */,
+				72754D0F2C8B776100199AD5 /* URLConvertible+URLRequestConvertible.swift */,
+				72754D4F2C8B776300199AD5 /* URLEncodedFormEncoder.swift */,
+				72754D162C8B776100199AD5 /* URLRequest+Alamofire.swift */,
+				72754D142C8B776100199AD5 /* URLSessionConfiguration+Alamofire.swift */,
+				72754D0D2C8B776100199AD5 /* Validation.swift */,
+				72754D082C8B775C00199AD5 /* WebSocketRequest.swift */,
+				72754CA92C8B73DE00199AD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72754CA92C8B73DE00199AD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72754CA82C8B73DE00199AD5 /* MyHealth.AI.app */,
+				72754CB82C8B73E000199AD5 /* MyHealth.AITests.xctest */,
+				72754CC22C8B73E000199AD5 /* MyHealth.AIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72754CAA2C8B73DE00199AD5 /* MyHealth.AI */ = {
+			isa = PBXGroup;
+			children = (
+				72754CAB2C8B73DE00199AD5 /* MyHealth_AIApp.swift */,
+				72754CAD2C8B73DE00199AD5 /* ContentView.swift */,
+				72754CAF2C8B73DF00199AD5 /* Assets.xcassets */,
+				72754CB12C8B73DF00199AD5 /* Preview Content */,
+			);
+			path = MyHealth.AI;
+			sourceTree = "<group>";
+		};
+		72754CB12C8B73DF00199AD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				72754CB22C8B73DF00199AD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72754CBB2C8B73E000199AD5 /* MyHealth.AITests */ = {
+			isa = PBXGroup;
+			children = (
+				72754CBC2C8B73E000199AD5 /* MyHealth_AITests.swift */,
+			);
+			path = MyHealth.AITests;
+			sourceTree = "<group>";
+		};
+		72754CC52C8B73E000199AD5 /* MyHealth.AIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72754CC62C8B73E000199AD5 /* MyHealth_AIUITests.swift */,
+				72754CC82C8B73E000199AD5 /* MyHealth_AIUITestsLaunchTests.swift */,
+			);
+			path = MyHealth.AIUITests;
+			sourceTree = "<group>";
+		};
+		72754CD52C8B740300199AD5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				72754CD92C8B74BE00199AD5 /* MyHealth.AI.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		72754CDD2C8B756600199AD5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				72754CDE2C8B759900199AD5 /* MyHealthAITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		72754D282C8B776200199AD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72754D2E2C8B776200199AD5 /* MyHealth.AI.app */,
+				72754D302C8B776200199AD5 /* MyHealth.AITests.xctest */,
+				72754D322C8B776200199AD5 /* MyHealth.AIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72754D442C8B776300199AD5 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72754CA72C8B73DE00199AD5 /* MyHealth.AI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72754CCC2C8B73E000199AD5 /* Build configuration list for PBXNativeTarget "MyHealth.AI" */;
+			buildPhases = (
+				72754CA42C8B73DE00199AD5 /* Sources */,
+				72754CA52C8B73DE00199AD5 /* Frameworks */,
+				72754CA62C8B73DE00199AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyHealth.AI;
+			productName = MyHealth.AI;
+			productReference = 72754CA82C8B73DE00199AD5 /* MyHealth.AI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72754CB72C8B73E000199AD5 /* MyHealth.AITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72754CCF2C8B73E000199AD5 /* Build configuration list for PBXNativeTarget "MyHealth.AITests" */;
+			buildPhases = (
+				72754CB42C8B73E000199AD5 /* Sources */,
+				72754CB52C8B73E000199AD5 /* Frameworks */,
+				72754CB62C8B73E000199AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72754CBA2C8B73E000199AD5 /* PBXTargetDependency */,
+			);
+			name = MyHealth.AITests;
+			productName = MyHealth.AITests;
+			productReference = 72754CB82C8B73E000199AD5 /* MyHealth.AITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72754CC12C8B73E000199AD5 /* MyHealth.AIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72754CD22C8B73E000199AD5 /* Build configuration list for PBXNativeTarget "MyHealth.AIUITests" */;
+			buildPhases = (
+				72754CBE2C8B73E000199AD5 /* Sources */,
+				72754CBF2C8B73E000199AD5 /* Frameworks */,
+				72754CC02C8B73E000199AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72754CC42C8B73E000199AD5 /* PBXTargetDependency */,
+			);
+			name = MyHealth.AIUITests;
+			productName = MyHealth.AIUITests;
+			productReference = 72754CC22C8B73E000199AD5 /* MyHealth.AIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72754CA02C8B73DE00199AD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					72754CA72C8B73DE00199AD5 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					72754CB72C8B73E000199AD5 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+						TestTargetID = 72754CA72C8B73DE00199AD5;
+					};
+					72754CC12C8B73E000199AD5 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 72754CA72C8B73DE00199AD5;
+					};
+				};
+			};
+			buildConfigurationList = 72754CA32C8B73DE00199AD5 /* Build configuration list for PBXProject "MyHealth.AI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72754C9F2C8B73DE00199AD5;
+			productRefGroup = 72754CA92C8B73DE00199AD5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 72754D442C8B776300199AD5 /* Products */;
+					ProjectRef = 72754D432C8B776300199AD5 /* MyHealth.AI.xcodeproj */;
+				},
+				{
+					ProductGroup = 72754D282C8B776200199AD5 /* Products */;
+					ProjectRef = 72754D272C8B776200199AD5 /* MyHealth.AI.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				72754CA72C8B73DE00199AD5 /* MyHealth.AI */,
+				72754CB72C8B73E000199AD5 /* MyHealth.AITests */,
+				72754CC12C8B73E000199AD5 /* MyHealth.AIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		72754D2E2C8B776200199AD5 /* MyHealth.AI.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MyHealth.AI.app;
+			remoteRef = 72754D2D2C8B776200199AD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		72754D302C8B776200199AD5 /* MyHealth.AITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyHealth.AITests.xctest;
+			remoteRef = 72754D2F2C8B776200199AD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		72754D322C8B776200199AD5 /* MyHealth.AIUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyHealth.AIUITests.xctest;
+			remoteRef = 72754D312C8B776200199AD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72754CA62C8B73DE00199AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72754DAA2C8B776400199AD5 /* Pods in Resources */,
+				72754D602C8B776400199AD5 /* Alamofire in Resources */,
+				72754D582C8B776400199AD5 /* SwiftLint.debug.xcconfig in Resources */,
+				72754DC42C8B776400199AD5 /* database.csv in Resources */,
+				72754D702C8B776400199AD5 /* MBProgressHUD in Resources */,
+				72754D8E2C8B776400199AD5 /* Pods-MyHealth.AI in Resources */,
+				72754DBE2C8B776400199AD5 /* Pods-MyHealth.AI.debug.xcconfig in Resources */,
+				72754D5A2C8B776400199AD5 /* Alamofire in Resources */,
+				72754DCA2C8B776400199AD5 /* SwiftLint in Resources */,
+				72754DB82C8B776400199AD5 /* SwiftLint.release.xcconfig in Resources */,
+				72754CB32C8B73DF00199AD5 /* Preview Assets.xcassets in Resources */,
+				72754CB02C8B73DF00199AD5 /* Assets.xcassets in Resources */,
+				72754D882C8B776400199AD5 /* MBProgressHUD in Resources */,
+				72754DCC2C8B776400199AD5 /* SwiftLint in Resources */,
+				72754D7A2C8B776400199AD5 /* Pods-MyHealth.AI-acknowledgements.plist in Resources */,
+				72754D682C8B776400199AD5 /* Podfile in Resources */,
+				72754D9E2C8B776400199AD5 /* Pods-MyHealth.AI-acknowledgements.markdown in Resources */,
+				72754D822C8B776400199AD5 /* Pods-MyHealth.AI.release.xcconfig in Resources */,
+				72754D662C8B776400199AD5 /* database.csv in Resources */,
+				72754D842C8B776400199AD5 /* Alamofire.bundle in Resources */,
+				72754D962C8B776400199AD5 /* Pods-MyHealth.AI-resources.sh in Resources */,
+				72754D8C2C8B776400199AD5 /* MyHealth.AI in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72754CB62C8B73E000199AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72754D712C8B776400199AD5 /* MBProgressHUD in Resources */,
+				72754D852C8B776400199AD5 /* Alamofire.bundle in Resources */,
+				72754D892C8B776400199AD5 /* MBProgressHUD in Resources */,
+				72754D7B2C8B776400199AD5 /* Pods-MyHealth.AI-acknowledgements.plist in Resources */,
+				72754D972C8B776400199AD5 /* Pods-MyHealth.AI-resources.sh in Resources */,
+				72754DC52C8B776400199AD5 /* database.csv in Resources */,
+				72754D832C8B776400199AD5 /* Pods-MyHealth.AI.release.xcconfig in Resources */,
+				72754D692C8B776400199AD5 /* Podfile in Resources */,
+				72754D612C8B776400199AD5 /* Alamofire in Resources */,
+				72754DCD2C8B776400199AD5 /* SwiftLint in Resources */,
+				72754DAB2C8B776400199AD5 /* Pods in Resources */,
+				72754DBF2C8B776400199AD5 /* Pods-MyHealth.AI.debug.xcconfig in Resources */,
+				72754D8F2C8B776400199AD5 /* Pods-MyHealth.AI in Resources */,
+				72754D592C8B776400199AD5 /* SwiftLint.debug.xcconfig in Resources */,
+				72754D9F2C8B776400199AD5 /* Pods-MyHealth.AI-acknowledgements.markdown in Resources */,
+				72754DCB2C8B776400199AD5 /* SwiftLint in Resources */,
+				72754DB92C8B776400199AD5 /* SwiftLint.release.xcconfig in Resources */,
+				72754D8D2C8B776400199AD5 /* MyHealth.AI in Resources */,
+				72754D5B2C8B776400199AD5 /* Alamofire in Resources */,
+				72754D672C8B776400199AD5 /* database.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72754CC02C8B73E000199AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72754CA42C8B73DE00199AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72754DB22C8B776400199AD5 /* MultipartUpload.swift in Sources */,
+				72754DD62C8B776400199AD5 /* RequestTaskMap.swift in Sources */,
+				72754DC82C8B776400199AD5 /* MultipartFormData.swift in Sources */,
+				72754DAC2C8B776400199AD5 /* Protected.swift in Sources */,
+				72754DD02C8B776400199AD5 /* RetryPolicy.swift in Sources */,
+				72754DB02C8B776400199AD5 /* DataStreamRequest.swift in Sources */,
+				72754D902C8B776400199AD5 /* Notifications.swift in Sources */,
+				72754DA22C8B776400199AD5 /* Request.swift in Sources */,
+				72754DA42C8B776400199AD5 /* StringEncoding+Alamofire.swift in Sources */,
+				72754DCE2C8B776400199AD5 /* URLEncodedFormEncoder.swift in Sources */,
+				72754CAE2C8B73DE00199AD5 /* ContentView.swift in Sources */,
+				72754DBA2C8B776400199AD5 /* Pods-MyHealth.AI-dummy.m in Sources */,
+				72754DBC2C8B776400199AD5 /* RequestInterceptor.swift in Sources */,
+				72754D862C8B776400199AD5 /* AuthenticationInterceptor.swift in Sources */,
+				72754DB42C8B776400199AD5 /* HTTPHeaders.swift in Sources */,
+				72754D722C8B776400199AD5 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				72754D6C2C8B776400199AD5 /* SessionDelegate.swift in Sources */,
+				72754D6E2C8B776400199AD5 /* Validation.swift in Sources */,
+				72754D942C8B776400199AD5 /* ServerTrustEvaluation.swift in Sources */,
+				72754D9C2C8B776400199AD5 /* MBProgressHUD.m in Sources */,
+				72754D7C2C8B776400199AD5 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				72754DA62C8B776400199AD5 /* EventMonitor.swift in Sources */,
+				72754D9A2C8B776400199AD5 /* Combine.swift in Sources */,
+				72754DA02C8B776400199AD5 /* Session.swift in Sources */,
+				72754DD22C8B776400199AD5 /* AlamofireExtended.swift in Sources */,
+				72754D642C8B776400199AD5 /* WebSocketRequest.swift in Sources */,
+				72754CDF2C8B759900199AD5 /* MyHealthAITests.swift in Sources */,
+				72754D562C8B776400199AD5 /* Concurrency.swift in Sources */,
+				72754D742C8B776400199AD5 /* AFError.swift in Sources */,
+				72754DC62C8B776400199AD5 /* Response.swift in Sources */,
+				72754D762C8B776400199AD5 /* DispatchQueue+Alamofire.swift in Sources */,
+				72754D8A2C8B776400199AD5 /* UploadRequest.swift in Sources */,
+				72754DC22C8B776400199AD5 /* OperationQueue+Alamofire.swift in Sources */,
+				72754D802C8B776400199AD5 /* URLRequest+Alamofire.swift in Sources */,
+				72754CAC2C8B73DE00199AD5 /* MyHealth_AIApp.swift in Sources */,
+				72754D7E2C8B776400199AD5 /* CachedResponseHandler.swift in Sources */,
+				72754D5C2C8B776400199AD5 /* NetworkReachabilityManager.swift in Sources */,
+				72754DD82C8B776400199AD5 /* Alamofire.swift in Sources */,
+				72754DD42C8B776400199AD5 /* DataRequest.swift in Sources */,
+				72754DB62C8B776400199AD5 /* DownloadRequest.swift in Sources */,
+				72754D6A2C8B776400199AD5 /* RequestCompression.swift in Sources */,
+				72754D982C8B776400199AD5 /* Result+Alamofire.swift in Sources */,
+				72754DAE2C8B776400199AD5 /* ParameterEncoding.swift in Sources */,
+				72754D622C8B776400199AD5 /* ResponseSerialization.swift in Sources */,
+				72754DDA2C8B776400199AD5 /* HTTPMethod.swift in Sources */,
+				72754CDA2C8B74BE00199AD5 /* MyHealth.AI.swift in Sources */,
+				72754DC02C8B776400199AD5 /* ParameterEncoder.swift in Sources */,
+				72754DA82C8B776400199AD5 /* RedirectHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72754CB42C8B73E000199AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72754D772C8B776400199AD5 /* DispatchQueue+Alamofire.swift in Sources */,
+				72754DBB2C8B776400199AD5 /* Pods-MyHealth.AI-dummy.m in Sources */,
+				72754DD12C8B776400199AD5 /* RetryPolicy.swift in Sources */,
+				72754DA72C8B776400199AD5 /* EventMonitor.swift in Sources */,
+				72754DA32C8B776400199AD5 /* Request.swift in Sources */,
+				72754CBD2C8B73E000199AD5 /* MyHealth_AITests.swift in Sources */,
+				72754DD92C8B776400199AD5 /* Alamofire.swift in Sources */,
+				72754DB72C8B776400199AD5 /* DownloadRequest.swift in Sources */,
+				72754D572C8B776400199AD5 /* Concurrency.swift in Sources */,
+				72754DCF2C8B776400199AD5 /* URLEncodedFormEncoder.swift in Sources */,
+				72754D5D2C8B776400199AD5 /* NetworkReachabilityManager.swift in Sources */,
+				72754DA92C8B776400199AD5 /* RedirectHandler.swift in Sources */,
+				72754D812C8B776400199AD5 /* URLRequest+Alamofire.swift in Sources */,
+				72754DB52C8B776400199AD5 /* HTTPHeaders.swift in Sources */,
+				72754D652C8B776400199AD5 /* WebSocketRequest.swift in Sources */,
+				72754D9B2C8B776400199AD5 /* Combine.swift in Sources */,
+				72754D6F2C8B776400199AD5 /* Validation.swift in Sources */,
+				72754D632C8B776400199AD5 /* ResponseSerialization.swift in Sources */,
+				72754DD32C8B776400199AD5 /* AlamofireExtended.swift in Sources */,
+				72754DC92C8B776400199AD5 /* MultipartFormData.swift in Sources */,
+				72754DDB2C8B776400199AD5 /* HTTPMethod.swift in Sources */,
+				72754D7F2C8B776400199AD5 /* CachedResponseHandler.swift in Sources */,
+				72754D872C8B776400199AD5 /* AuthenticationInterceptor.swift in Sources */,
+				72754CE02C8B759900199AD5 /* MyHealthAITests.swift in Sources */,
+				72754DD52C8B776400199AD5 /* DataRequest.swift in Sources */,
+				72754D952C8B776400199AD5 /* ServerTrustEvaluation.swift in Sources */,
+				72754DB32C8B776400199AD5 /* MultipartUpload.swift in Sources */,
+				72754DAD2C8B776400199AD5 /* Protected.swift in Sources */,
+				72754D7D2C8B776400199AD5 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				72754DC32C8B776400199AD5 /* OperationQueue+Alamofire.swift in Sources */,
+				72754DBD2C8B776400199AD5 /* RequestInterceptor.swift in Sources */,
+				72754DC72C8B776400199AD5 /* Response.swift in Sources */,
+				72754D912C8B776400199AD5 /* Notifications.swift in Sources */,
+				72754DAF2C8B776400199AD5 /* ParameterEncoding.swift in Sources */,
+				72754D9D2C8B776400199AD5 /* MBProgressHUD.m in Sources */,
+				72754DB12C8B776400199AD5 /* DataStreamRequest.swift in Sources */,
+				72754D8B2C8B776400199AD5 /* UploadRequest.swift in Sources */,
+				72754D732C8B776400199AD5 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				72754D6B2C8B776400199AD5 /* RequestCompression.swift in Sources */,
+				72754DD72C8B776400199AD5 /* RequestTaskMap.swift in Sources */,
+				72754DC12C8B776400199AD5 /* ParameterEncoder.swift in Sources */,
+				72754DA12C8B776400199AD5 /* Session.swift in Sources */,
+				72754D6D2C8B776400199AD5 /* SessionDelegate.swift in Sources */,
+				72754D752C8B776400199AD5 /* AFError.swift in Sources */,
+				72754D992C8B776400199AD5 /* Result+Alamofire.swift in Sources */,
+				72754DA52C8B776400199AD5 /* StringEncoding+Alamofire.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72754CBE2C8B73E000199AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72754CC92C8B73E000199AD5 /* MyHealth_AIUITestsLaunchTests.swift in Sources */,
+				72754CC72C8B73E000199AD5 /* MyHealth_AIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72754CBA2C8B73E000199AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72754CA72C8B73DE00199AD5 /* MyHealth.AI */;
+			targetProxy = 72754CB92C8B73E000199AD5 /* PBXContainerItemProxy */;
+		};
+		72754CC42C8B73E000199AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72754CA72C8B73DE00199AD5 /* MyHealth.AI */;
+			targetProxy = 72754CC32C8B73E000199AD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		72754CCA2C8B73E000199AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72754CCB2C8B73E000199AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72754CCD2C8B73E000199AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyHealth.AI/Preview Content\"";
+				DEVELOPMENT_TEAM = LJ7452ZVW2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Build.MyHealth-AI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72754CCE2C8B73E000199AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyHealth.AI/Preview Content\"";
+				DEVELOPMENT_TEAM = LJ7452ZVW2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Build.MyHealth-AI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72754CD02C8B73E000199AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LJ7452ZVW2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Build.MyHealth-AITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyHealth.AI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyHealth.AI";
+			};
+			name = Debug;
+		};
+		72754CD12C8B73E000199AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LJ7452ZVW2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Build.MyHealth-AITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyHealth.AI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyHealth.AI";
+			};
+			name = Release;
+		};
+		72754CD32C8B73E000199AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LJ7452ZVW2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Build.MyHealth-AIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyHealth.AI;
+			};
+			name = Debug;
+		};
+		72754CD42C8B73E000199AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LJ7452ZVW2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Build.MyHealth-AIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyHealth.AI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72754CA32C8B73DE00199AD5 /* Build configuration list for PBXProject "MyHealth.AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72754CCA2C8B73E000199AD5 /* Debug */,
+				72754CCB2C8B73E000199AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72754CCC2C8B73E000199AD5 /* Build configuration list for PBXNativeTarget "MyHealth.AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72754CCD2C8B73E000199AD5 /* Debug */,
+				72754CCE2C8B73E000199AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72754CCF2C8B73E000199AD5 /* Build configuration list for PBXNativeTarget "MyHealth.AITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72754CD02C8B73E000199AD5 /* Debug */,
+				72754CD12C8B73E000199AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72754CD22C8B73E000199AD5 /* Build configuration list for PBXNativeTarget "MyHealth.AIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72754CD32C8B73E000199AD5 /* Debug */,
+				72754CD42C8B73E000199AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72754CA02C8B73DE00199AD5 /* Project object */;
+}

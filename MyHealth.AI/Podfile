@@ -1,0 +1,22 @@
+# Podfile for MyHealth.AI project
+# Specify the Xcode project (.xcodeproj file)
+project 'MyHealth.AI.xcodeproj'
+
+# Define the platform and version for the project
+platform :ios, '17.2'
+
+# Define the target for MyHealth.AI
+target 'MyHealth.AI' do
+  # Pods for networking, UI, etc.
+
+  # Alamofire for networking tasks
+  pod 'Alamofire', '~> 5.9.1'
+
+  # For adding progress HUD (loading indicators)
+  pod 'MBProgressHUD', '~> 1.2.0'
+
+  # SwiftLint for linting Swift code (optional, if needed)
+  pod 'SwiftLint'
+end
+
+

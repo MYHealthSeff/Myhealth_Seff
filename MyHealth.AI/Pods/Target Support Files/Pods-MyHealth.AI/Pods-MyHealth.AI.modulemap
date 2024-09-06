@@ -1,0 +1,6 @@
+module Pods_MyHealth_AI {
+  umbrella header "Pods-MyHealth.AI-umbrella.h"
+
+  export *
+  module * { export * }
+}

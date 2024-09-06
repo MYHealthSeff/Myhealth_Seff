@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MyHealth.AI.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Sources">
+      <FileRef
+         location = "group:MyHealth.AI.swift">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Tests">
+      <FileRef
+         location = "group:MyHealthAITests.swift">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:project.pbxproj">
+   </FileRef>
+   <FileRef
+      location = "group:Critical_care_view.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Messages_view.swift">
+   </FileRef>
+   <FileRef
+      location = "group:content_homeview.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PatientListView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PatientData.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../database.csv">
+   </FileRef>
+   <FileRef
+      location = "group:">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

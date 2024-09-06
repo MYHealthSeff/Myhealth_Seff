@@ -1,0 +1,101 @@
+Patient_ID,First_Name,Last_Name,Age,Gender,Blood_Type,Visit_Reason,Visit_Date,Diagnosis,Treatment_Plan,Room_Assigned,Doctor_Assigned,Nurse_Assigned,Discharge_Status,Follow_Up_Required
+1,Bob,Williams,93,Female,O-,Chest Pain,2023-06-27 05:20:00,Hypertension,Counseling,ER Room 1,Dr. Davis,Nurse Ian,Transferred,No
+2,Jane,Brown,30,Female,B-,Stomach Ache,2023-06-27 05:20:00,Hypertension,Counseling,ER Room 1,Dr. Adams,Nurse Jack,Admitted,No
+3,John,Johnson,65,Female,A-,Stomach Ache,2023-06-27 05:20:00,Anxiety,Medication,ER Room 1,Dr. Davis,Nurse Frank,Deceased,No
+4,Jane,Doe,90,Other,AB+,Fever,2023-06-27 05:20:00,Hypertension,Observation,ER Room 2,Dr. Evans,Nurse Ian,Discharged,No
+5,John,Johnson,27,Female,O+,Stomach Ache,2023-06-27 05:20:00,Hypertension,Observation,ICU,Dr. Baker,Nurse Jack,Deceased,Yes
+6,Jane,Doe,29,Other,A-,Stomach Ache,2023-06-27 05:20:00,Anxiety,Physical Therapy,General Ward,Dr. Davis,Nurse Helen,Admitted,Yes
+7,John,Williams,11,Other,AB-,Fever,2023-06-27 05:20:00,Flu,Surgery,ER Room 1,Dr. Evans,Nurse Frank,Admitted,Yes
+8,Bob,Doe,2,Other,AB-,Headache,2023-06-27 05:20:00,Anxiety,Observation,General Ward,Dr. Evans,Nurse Helen,Deceased,Yes
+9,Carol,Smith,70,Male,AB-,Fracture,2023-06-27 05:20:00,Anxiety,Medication,ICU,Dr. Adams,Nurse Helen,Discharged,Yes
+10,Bob,Smith,7,Other,A+,Fracture,2023-06-27 05:20:00,COVID-19,Surgery,ER Room 2,Dr. Clark,Nurse Jack,Admitted,Yes
+11,Jane,Doe,64,Female,B+,Injury,2023-06-27 05:20:00,Diabetes,Physical Therapy,General Ward,Dr. Baker,Nurse Helen,Deceased,No
+12,Bob,Johnson,31,Female,B-,Chest Pain,2023-06-27 05:20:00,Diabetes,Medication,General Ward,Dr. Baker,Nurse Helen,Transferred,Yes
+13,Bob,Brown,43,Other,B+,Headache,2023-06-27 05:20:00,Flu,Counseling,Pediatrics,Dr. Evans,Nurse Grace,Deceased,Yes
+14,John,Brown,13,Female,A-,Stomach Ache,2023-06-27 05:20:00,Asthma,Medication,Pediatrics,Dr. Evans,Nurse Frank,Admitted,No
+15,John,Johnson,1,Other,A-,Injury,2023-06-27 05:20:00,Anxiety,Surgery,Pediatrics,Dr. Baker,Nurse Ian,Admitted,Yes
+16,Jane,Doe,18,Female,A+,Stomach Ache,2023-06-27 05:20:00,Hypertension,Observation,ER Room 2,Dr. Baker,Nurse Helen,Discharged,Yes
+17,Bob,Brown,50,Female,AB-,Fracture,2023-06-27 05:20:00,Hypertension,Counseling,General Ward,Dr. Evans,Nurse Helen,Transferred,No
+18,Jane,Johnson,67,Male,A+,Headache,2023-06-27 05:20:00,COVID-19,Counseling,ER Room 1,Dr. Adams,Nurse Helen,Admitted,Yes
+19,Carol,Williams,14,Other,O+,Headache,2023-06-27 05:20:00,Asthma,Medication,ICU,Dr. Baker,Nurse Grace,Discharged,No
+20,Bob,Brown,70,Male,A+,Chest Pain,2023-06-27 05:20:00,COVID-19,Counseling,Pediatrics,Dr. Evans,Nurse Helen,Transferred,Yes
+21,Carol,Williams,79,Other,A+,Injury,2023-06-27 05:20:00,Asthma,Medication,Pediatrics,Dr. Baker,Nurse Ian,Deceased,No
+22,Jane,Williams,3,Other,B-,Injury,2023-06-27 05:20:00,Diabetes,Counseling,ER Room 1,Dr. Adams,Nurse Ian,Discharged,No
+23,Bob,Smith,94,Female,A+,Injury,2023-06-27 05:20:00,Hypertension,Surgery,General Ward,Dr. Clark,Nurse Grace,Admitted,Yes
+24,Carol,Johnson,51,Other,A+,Injury,2023-06-27 05:20:00,COVID-19,Counseling,ICU,Dr. Clark,Nurse Grace,Deceased,No
+25,Carol,Johnson,16,Female,B-,Fever,2023-06-27 05:20:00,Diabetes,Physical Therapy,Pediatrics,Dr. Baker,Nurse Frank,Discharged,No
+26,John,Smith,90,Male,AB+,Stomach Ache,2023-06-27 05:20:00,Flu,Physical Therapy,General Ward,Dr. Davis,Nurse Ian,Discharged,No
+27,John,Williams,86,Other,A+,Stomach Ache,2023-06-27 05:20:00,Flu,Medication,Pediatrics,Dr. Baker,Nurse Frank,Admitted,No
+28,Bob,Smith,83,Male,B-,Fever,2023-06-27 05:20:00,Diabetes,Medication,ER Room 1,Dr. Adams,Nurse Helen,Transferred,No
+29,Bob,Brown,53,Male,B+,Stomach Ache,2023-06-27 05:20:00,COVID-19,Surgery,ER Room 1,Dr. Adams,Nurse Helen,Admitted,Yes
+30,Alice,Brown,48,Female,B+,Injury,2023-06-27 05:20:00,Asthma,Counseling,ICU,Dr. Evans,Nurse Frank,Discharged,Yes
+31,John,Smith,69,Other,O+,Headache,2023-06-27 05:20:00,Hypertension,Surgery,General Ward,Dr. Baker,Nurse Helen,Transferred,No
+32,Jane,Doe,68,Female,B+,Fever,2023-06-27 05:20:00,COVID-19,Surgery,Pediatrics,Dr. Davis,Nurse Helen,Transferred,Yes
+33,Carol,Doe,51,Female,A+,Stomach Ache,2023-06-27 05:20:00,Asthma,Counseling,Pediatrics,Dr. Evans,Nurse Helen,Discharged,No
+34,Jane,Doe,67,Other,A-,Chest Pain,2023-06-27 05:20:00,COVID-19,Counseling,ER Room 2,Dr. Davis,Nurse Frank,Discharged,No
+35,Bob,Williams,45,Other,B+,Chest Pain,2023-06-27 05:20:00,Asthma,Observation,Pediatrics,Dr. Adams,Nurse Ian,Transferred,Yes
+36,Jane,Smith,81,Female,B+,Injury,2023-06-27 05:20:00,Diabetes,Medication,ER Room 2,Dr. Baker,Nurse Grace,Admitted,Yes
+37,Carol,Brown,34,Other,AB+,Fracture,2023-06-27 05:20:00,Flu,Observation,General Ward,Dr. Davis,Nurse Helen,Deceased,Yes
+38,Bob,Johnson,55,Other,AB-,Injury,2023-06-27 05:20:00,Anxiety,Surgery,ICU,Dr. Baker,Nurse Helen,Transferred,No
+39,John,Williams,65,Male,AB+,Headache,2023-06-27 05:20:00,Flu,Medication,ICU,Dr. Clark,Nurse Grace,Transferred,Yes
+40,Bob,Brown,22,Male,A-,Fever,2023-06-27 05:20:00,COVID-19,Observation,General Ward,Dr. Evans,Nurse Frank,Transferred,Yes
+41,Bob,Johnson,79,Female,AB-,Fracture,2023-06-27 05:20:00,Anxiety,Counseling,ICU,Dr. Davis,Nurse Grace,Deceased,Yes
+42,Carol,Smith,27,Male,B-,Fracture,2023-06-27 05:20:00,Asthma,Observation,ER Room 1,Dr. Clark,Nurse Jack,Deceased,No
+43,Bob,Brown,31,Male,AB-,Chest Pain,2023-06-27 05:20:00,Hypertension,Physical Therapy,Pediatrics,Dr. Baker,Nurse Frank,Deceased,No
+44,Carol,Brown,79,Male,A+,Chest Pain,2023-06-27 05:20:00,Asthma,Physical Therapy,ICU,Dr. Baker,Nurse Frank,Admitted,No
+45,Bob,Doe,47,Other,O+,Fever,2023-06-27 05:20:00,Anxiety,Observation,General Ward,Dr. Evans,Nurse Frank,Deceased,No
+46,Carol,Williams,77,Male,A+,Headache,2023-06-27 05:20:00,Diabetes,Surgery,ER Room 2,Dr. Davis,Nurse Helen,Admitted,Yes
+47,John,Johnson,1,Female,B-,Headache,2023-06-27 05:20:00,COVID-19,Medication,ER Room 2,Dr. Adams,Nurse Helen,Deceased,No
+48,Carol,Smith,74,Other,A-,Injury,2023-06-27 05:20:00,Asthma,Counseling,ICU,Dr. Evans,Nurse Helen,Transferred,No
+49,Bob,Brown,58,Other,A-,Stomach Ache,2023-06-27 05:20:00,COVID-19,Medication,Pediatrics,Dr. Baker,Nurse Grace,Admitted,Yes
+50,Carol,Johnson,37,Other,B-,Injury,2023-06-27 05:20:00,Hypertension,Observation,ICU,Dr. Evans,Nurse Grace,Discharged,No
+51,Alice,Johnson,78,Other,A+,Stomach Ache,2023-06-27 05:20:00,Flu,Observation,ER Room 2,Dr. Evans,Nurse Frank,Admitted,Yes
+52,Carol,Brown,67,Other,A-,Fever,2023-06-27 05:20:00,Diabetes,Counseling,ICU,Dr. Davis,Nurse Frank,Admitted,No
+53,John,Johnson,34,Female,A+,Chest Pain,2023-06-27 05:20:00,Diabetes,Medication,ER Room 1,Dr. Adams,Nurse Grace,Transferred,No
+54,Carol,Smith,18,Other,B+,Fracture,2023-06-27 05:20:00,Anxiety,Counseling,ER Room 2,Dr. Adams,Nurse Frank,Transferred,Yes
+55,Jane,Johnson,60,Male,B+,Headache,2023-06-27 05:20:00,Anxiety,Medication,ER Room 1,Dr. Clark,Nurse Frank,Deceased,No
+56,Jane,Smith,6,Female,B-,Fracture,2023-06-27 05:20:00,Hypertension,Medication,ER Room 1,Dr. Davis,Nurse Ian,Discharged,Yes
+57,Carol,Johnson,9,Male,A+,Fracture,2023-06-27 05:20:00,Diabetes,Surgery,ER Room 1,Dr. Adams,Nurse Ian,Transferred,No
+58,Alice,Brown,31,Other,AB-,Stomach Ache,2023-06-27 05:20:00,Hypertension,Observation,ER Room 1,Dr. Evans,Nurse Helen,Admitted,Yes
+59,John,Johnson,44,Other,B-,Fracture,2023-06-27 05:20:00,Flu,Medication,General Ward,Dr. Evans,Nurse Jack,Admitted,No
+60,John,Johnson,85,Other,B-,Stomach Ache,2023-06-27 05:20:00,Anxiety,Physical Therapy,General Ward,Dr. Adams,Nurse Grace,Transferred,No
+61,Alice,Johnson,37,Female,AB-,Fever,2023-06-27 05:20:00,Flu,Physical Therapy,ER Room 2,Dr. Davis,Nurse Frank,Discharged,No
+62,Bob,Smith,74,Male,O+,Stomach Ache,2023-06-27 05:20:00,Asthma,Surgery,ER Room 2,Dr. Clark,Nurse Grace,Transferred,No
+63,Jane,Smith,64,Female,O+,Fever,2023-06-27 05:20:00,COVID-19,Medication,ICU,Dr. Clark,Nurse Ian,Deceased,Yes
+64,Carol,Williams,39,Male,A+,Fracture,2023-06-27 05:20:00,COVID-19,Surgery,General Ward,Dr. Adams,Nurse Helen,Discharged,No
+65,Carol,Johnson,82,Female,B-,Fracture,2023-06-27 05:20:00,Hypertension,Observation,ICU,Dr. Clark,Nurse Grace,Transferred,Yes
+66,Alice,Smith,87,Female,B+,Injury,2023-06-27 05:20:00,COVID-19,Observation,ER Room 2,Dr. Evans,Nurse Frank,Admitted,Yes
+67,Alice,Smith,7,Female,AB-,Chest Pain,2023-06-27 05:20:00,Flu,Medication,Pediatrics,Dr. Evans,Nurse Frank,Discharged,No
+68,John,Williams,36,Male,O+,Chest Pain,2023-06-27 05:20:00,Anxiety,Counseling,ER Room 2,Dr. Baker,Nurse Ian,Admitted,Yes
+69,Alice,Doe,12,Male,AB-,Headache,2023-06-27 05:20:00,Diabetes,Observation,ER Room 1,Dr. Evans,Nurse Jack,Deceased,Yes
+70,Carol,Brown,25,Male,O+,Chest Pain,2023-06-27 05:20:00,Anxiety,Surgery,ICU,Dr. Adams,Nurse Ian,Admitted,Yes
+71,Jane,Johnson,99,Female,B+,Chest Pain,2023-06-27 05:20:00,Asthma,Surgery,General Ward,Dr. Adams,Nurse Jack,Admitted,No
+72,Alice,Smith,77,Other,A-,Fracture,2023-06-27 05:20:00,Asthma,Observation,ICU,Dr. Clark,Nurse Jack,Admitted,Yes
+73,Jane,Doe,53,Other,AB-,Fracture,2023-06-27 05:20:00,Hypertension,Physical Therapy,Pediatrics,Dr. Baker,Nurse Helen,Transferred,Yes
+74,Bob,Williams,2,Other,O+,Chest Pain,2023-06-27 05:20:00,Anxiety,Medication,ER Room 1,Dr. Evans,Nurse Helen,Deceased,Yes
+75,John,Williams,94,Male,O-,Injury,2023-06-27 05:20:00,COVID-19,Physical Therapy,ICU,Dr. Davis,Nurse Ian,Transferred,Yes
+76,Jane,Doe,39,Other,AB+,Injury,2023-06-27 05:20:00,Diabetes,Physical Therapy,ER Room 1,Dr. Clark,Nurse Frank,Transferred,No
+77,Bob,Johnson,63,Male,B-,Fracture,2023-06-27 05:20:00,Diabetes,Medication,ER Room 2,Dr. Baker,Nurse Jack,Transferred,Yes
+78,Jane,Smith,58,Female,O+,Stomach Ache,2023-06-27 05:20:00,COVID-19,Surgery,ER Room 2,Dr. Davis,Nurse Jack,Deceased,Yes
+79,John,Doe,26,Female,O-,Injury,2023-06-27 05:20:00,Anxiety,Physical Therapy,ER Room 1,Dr. Evans,Nurse Grace,Transferred,Yes
+80,Carol,Doe,38,Other,O+,Stomach Ache,2023-06-27 05:20:00,Flu,Counseling,General Ward,Dr. Adams,Nurse Grace,Transferred,Yes
+81,Carol,Williams,11,Female,AB+,Headache,2023-06-27 05:20:00,COVID-19,Medication,ER Room 1,Dr. Davis,Nurse Helen,Discharged,No
+82,Jane,Doe,26,Male,B-,Fracture,2023-06-27 05:20:00,COVID-19,Physical Therapy,ER Room 1,Dr. Baker,Nurse Grace,Admitted,Yes
+83,Alice,Williams,27,Female,O+,Stomach Ache,2023-06-27 05:20:00,Flu,Counseling,Pediatrics,Dr. Evans,Nurse Ian,Deceased,No
+84,Bob,Doe,97,Other,B+,Stomach Ache,2023-06-27 05:20:00,Diabetes,Physical Therapy,Pediatrics,Dr. Adams,Nurse Frank,Discharged,Yes
+85,Carol,Johnson,31,Male,AB-,Injury,2023-06-27 05:20:00,Diabetes,Surgery,Pediatrics,Dr. Davis,Nurse Helen,Discharged,No
+86,Jane,Doe,10,Other,O+,Fever,2023-06-27 05:20:00,Flu,Observation,ER Room 2,Dr. Clark,Nurse Frank,Deceased,Yes
+87,John,Smith,20,Male,A-,Chest Pain,2023-06-27 05:20:00,COVID-19,Surgery,ICU,Dr. Evans,Nurse Jack,Transferred,Yes
+88,Bob,Johnson,84,Male,O-,Injury,2023-06-27 05:20:00,Hypertension,Counseling,ER Room 2,Dr. Evans,Nurse Grace,Transferred,Yes
+89,John,Doe,34,Other,A-,Fracture,2023-06-27 05:20:00,Diabetes,Counseling,Pediatrics,Dr. Adams,Nurse Helen,Discharged,No
+90,Alice,Williams,19,Other,B-,Fever,2023-06-27 05:20:00,COVID-19,Physical Therapy,ER Room 2,Dr. Adams,Nurse Helen,Admitted,No
+91,Alice,Johnson,78,Female,AB-,Headache,2023-06-27 05:20:00,Anxiety,Physical Therapy,Pediatrics,Dr. Davis,Nurse Ian,Admitted,Yes
+92,Jane,Smith,9,Female,A+,Fracture,2023-06-27 05:20:00,Flu,Counseling,ER Room 1,Dr. Adams,Nurse Frank,Transferred,No
+93,Alice,Johnson,68,Other,B-,Headache,2023-06-27 05:20:00,Hypertension,Physical Therapy,General Ward,Dr. Baker,Nurse Frank,Deceased,No
+94,Carol,Smith,78,Other,O+,Stomach Ache,2023-06-27 05:20:00,Asthma,Counseling,General Ward,Dr. Adams,Nurse Helen,Admitted,Yes
+95,Carol,Doe,7,Female,O+,Headache,2023-06-27 05:20:00,Hypertension,Surgery,General Ward,Dr. Davis,Nurse Ian,Transferred,No
+96,Jane,Johnson,12,Male,A+,Headache,2023-06-27 05:20:00,Anxiety,Medication,Pediatrics,Dr. Evans,Nurse Jack,Discharged,Yes
+97,Alice,Johnson,49,Other,O-,Fracture,2023-06-27 05:20:00,Diabetes,Observation,Pediatrics,Dr. Adams,Nurse Jack,Deceased,Yes
+98,John,Williams,13,Other,O+,Stomach Ache,2023-06-27 05:20:00,Diabetes,Observation,General Ward,Dr. Clark,Nurse Ian,Admitted,Yes
+99,Bob,Johnson,60,Female,AB+,Stomach Ache,2023-06-27 05:20:00,Diabetes,Physical Therapy,Pediatrics,Dr. Clark,Nurse Ian,Admitted,Yes
+100,Jane,Brown,88,Other,O-,Chest Pain,2023-06-27 05:20:00,Diabetes,Counseling,ER Room 2,Dr. Davis,Nurse Frank,Transferred,No
